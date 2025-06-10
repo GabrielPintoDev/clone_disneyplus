@@ -3,6 +3,7 @@
 @use "shows";
 @use "plans";
 @use "available-devices";
+@use "faq";
 
 @font-face {
     font-family: Avenir;
@@ -49,6 +50,23 @@ body {
 .text--small {
     @include text(12px);
     color: variaveis.$corTextoSecundario;
+}
+
+.text--subItem {
+    list-style-type: disc;
+
+    li {
+        padding-top: 20px;
+        margin-left: 40px;
+    }
+}
+
+.text--subItem--none {
+    list-style-type: none;
+}
+
+.text--link {
+    color: #fff;
 }
 
 .link-text {
